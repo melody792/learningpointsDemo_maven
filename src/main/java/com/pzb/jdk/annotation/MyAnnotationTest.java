@@ -1,4 +1,4 @@
-package com.pzb.jdk.subpackage;
+package com.pzb.jdk.annotation;
 
 @MyAnnotation(hello = "1", array = {}, lannotation = @MyTarget, world = "2")
 public class MyAnnotationTest {

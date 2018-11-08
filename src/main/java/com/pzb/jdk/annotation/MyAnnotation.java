@@ -1,4 +1,4 @@
-package com.pzb.jdk.subpackage;
+package com.pzb.jdk.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

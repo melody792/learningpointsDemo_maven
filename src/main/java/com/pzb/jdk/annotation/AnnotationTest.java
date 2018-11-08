@@ -1,6 +1,4 @@
-package com.pzb.jdk;
-
-import com.pzb.jdk.subpackage.MyTarget;
+package com.pzb.jdk.annotation;
 
 import java.lang.reflect.Method;
 
