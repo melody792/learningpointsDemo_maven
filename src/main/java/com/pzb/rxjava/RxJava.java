@@ -1,16 +1,13 @@
 package com.pzb.rxjava;
 
-import com.ibm.jvm.j9.dump.extract.Main;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
-import io.reactivex.Scheduler;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
-import sun.awt.windows.ThemeReader;
 
 import java.util.logging.Logger;
 
