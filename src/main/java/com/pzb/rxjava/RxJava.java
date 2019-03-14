@@ -1,5 +1,6 @@
 package com.pzb.rxjava;
 
+import com.pzb.log.Log;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -9,6 +10,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class RxJava {
@@ -25,7 +27,9 @@ public class RxJava {
         Observable observable = Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(ObservableEmitter<Integer> observableEmitter) throws Exception {
+                logger.setLevel(Level.INFO);
                 logger.info("Thread: "+Thread.currentThread().getName()+"-----emit: "+ 1);
+                Log.info(logger, "hello");
                 observableEmitter.onNext(1);
             }
         });
